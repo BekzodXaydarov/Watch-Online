@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+    user-select: none;
+}
+/* body */
+body {
+    background-color: #233142;
+}
+/* navbar */
+nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    background-color: #233142;
+}
+/* Logo */
+.nav_logo {
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+.nav_logo span {
+    color: #f95959;
+}
+/* nav links */
+.nav_links  {
+    display: flex;
+    gap: 100px;
+}  
+.nav_links .nav_link{
+color: white;
+font-size: 19px;
+position: relative;
+} 
+.nav_link::before{
+  content: '';
+  background-color: #f95959;
+  position: absolute;
+  height: 3px;
+  width: 0%;
+  top: 25px;
+  transition: all .5s;
+}
+nav ul li a:hover::before{
+    width: 100%;
+}
+/* nav actions */
+.nav_actions {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav_action {
+  background-color: transparent;
+  border: none;
+}
+.nav_action a {
+    color: #f95959;
+    border: 1px solid #f95959;
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+.nav_action a:hover {
+    background-color: #f95959;
+    color: #233142;
+    transition: .5s;
+}
+/* bars */
+.nav_actions .bars {
+    width: 25px;
+    display: none;
+}
+.nav_actions .bars div {
+    width: 100%;
+    height: 1px;
+    background-color: #f95959;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: all 0.3s !important;
+}
+/* Header ======================================================================== */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    margin-top: 50px;
+}
+header h1 {
+    font-size: 70px;
+    color: #f95959;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+header p {
+    width: 700px;
+    color: white;
+    margin-bottom: 30px;
+}
+header a {
+    border: 2px solid #f95959;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    color: #f95959;
+    padding: 15px 50px;
+}
+header a:hover  {
+    background-color: #f95959;
+    color: #233142;
+}
+
+.header_video {
+    position: absolute;
+    z-index: -1 !important;
+    width: 100%;
+}
