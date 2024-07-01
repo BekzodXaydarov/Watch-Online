@@ -1,13 +1,12 @@
-@media screen and (max-width:900px) {
-    
+@media screen and (max-width: 900px) {
 }
 
-@media screen and (max-width:500px) {
-    nav .nav_logo {
-        font-size: 25px;
-    }
-    .nav_links {
-        display: block;
+@media screen and (max-width: 500px) {
+  nav .nav_logo {
+    font-size: 25px;
+  }
+  .nav_links {
+    display: block;
     position: absolute;
     top: 0;
     right: -100%;
@@ -17,28 +16,28 @@
     transition: 0.6s;
     background-color: #455d7a;
     margin-left: 0;
-    }
-    .active_links {
-        right: 0%;
-    }
-    .nav_links li{
-        margin: 40px 30px !important;
-    }
-    .nav_actions .bars {
-        display: block;
-        z-index: 2;
-        transition: all 0.3s !important;
-    }
-    .toggle .line1 {
-        transform: rotate(-45deg) translate( -10px, 5px);
-        transition: 0.3s;
-      }
-      .toggle .line2 {
-        opacity: 0;
-        transition: 0.3s;
-      }
-      .toggle .line3 {
-        transform: rotate(45deg) translate(-10px, -5px);
-        transition: 0.3s;
-      }
+  }
+  .active_links {
+    right: 0%;
+  }
+  .nav_links li {
+    margin: 40px 30px !important;
+  }
+  .nav_actions .bars {
+    display: block;
+    z-index: 2;
+    transition: all 0.3s !important;
+  }
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-10px, 5px);
+    transition: 0.3s;
+  }
+  .toggle .line2 {
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-10px, -5px);
+    transition: 0.3s;
+  }
 }
