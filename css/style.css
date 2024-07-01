@@ -22,6 +22,7 @@ nav {
   position: fixed;
   top: 0;
   background-color: #233142;
+  z-index: 9999 !important;
 }
 /* Logo */
 .nav_logo {
@@ -89,3 +90,109 @@ nav ul li a:hover::before {
   transition: all 0.3s !important;
 }
 /* Header ======================================================================== */
+header {
+  margin-top: 100px;
+  padding: 50px;
+}
+header h1 {
+  font-size: 40px;
+  color: #f95959;
+}
+header h1 span {
+  color: white;
+}
+header .new_datas_wrap {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  padding-top: 15px;
+  gap: 30px;
+}
+header .new_datas_wrap .card_data {
+  width: 300px;
+  height: 350px;
+  border: 1px solid #f95959;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 15px;
+  cursor: pointer;
+}
+.card_data img {
+  width: 100%;
+  height: 70%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.card_data h2 {
+  color: #c3195d;
+  font-size: 35px;
+}
+
+.card_data p {
+  color: white;
+  display: inline-block;
+}
+.card_data h3 {
+  color: white;
+}
+.card_data_footer {
+  margin-top: 10%;
+}
+/* Main */
+main {
+  width: 100% !important;
+  overflow: hidden;
+  padding: 50px;
+}
+main h1 {
+  color: #c3195d;
+  font-size: 40px;
+  margin-top: 5px;
+}
+main .main_wrapper {
+  width: 100%;
+  display: flex !important; 
+  margin-top: 15px;
+}
+.main_wrapper .main_card {
+  width: 300px !important;
+  height: 340px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden !important;
+  transition: 0.5s;
+}
+
+.main_card img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden !important;
+}
+.main_card .main_card_title {
+  position: absolute;
+  left: -150px;
+  top: 5px;
+  color: white;
+  font-size: 30px;
+  transition: 0.5s;
+}
+.main_card .main_card_body {
+  position: absolute;
+  bottom: -150px;
+  left: 10px;
+  transition: 0.5s;
+  color: #f95959;
+}
+.main_card_body p {
+  margin-top: 15px;
+  font-size: 20px;
+}
+.main_card_body span {
+  color: white;
+}
+
+.main_card:hover .main_card_title {
+  left: 10px;
+}
+.main_card:hover .main_card_body {
+  bottom: 20px;
+}
